@@ -9,11 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lableText: UILabel!
+    @IBOutlet weak var buttonText: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        lableText.isHidden = true
+        buttonText.layer.cornerRadius = 10
     }
 
-
+    @IBAction func actionButton(_ sender: Any) {
+        lableText.isHidden = !lableText.isHidden
+        buttonText.setTitle("HideText", for: .normal)
+    }
+    
 }
 

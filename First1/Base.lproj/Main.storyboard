@@ -33,6 +33,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IcI-rx-N96"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -50,6 +53,10 @@
                             <constraint firstItem="icj-36-k8K" firstAttribute="leading" secondItem="j3e-mN-a74" secondAttribute="trailing" constant="-107" id="zaj-GR-S1f"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonText" destination="icj-36-k8K" id="i28-Um-ley"/>
+                        <outlet property="lableText" destination="j3e-mN-a74" id="7H5-lu-C5E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
